@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Process Capability Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="processCapabilityRadio" name="variables" checked>
+  <label for="processCapabilityRadio">Process Capability</label>
+
+  <input type="radio" id="upperSpecificationLimitRadio" name="variables">
+  <label for="upperSpecificationLimitRadio">Upper Specification Limit</label>
+
+  <input type="radio" id="lowerSpecificationLimitRadio" name="variables">
+  <label for="lowerSpecificationLimitRadio">Lower Specification Limit</label>
+
+  <input type="radio" id="processStandardDeviationRadio" name="variables">
+  <label for="processStandardDeviationRadio">Process Standard Deviation</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">(USL) Upper Specification Limit</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">(LSL) Lower Specification Limit</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">(σ) Process Standard Deviation</label>
+  <input type="number" id="v3"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
